@@ -1,0 +1,1002 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h2, h3, h3, h4, p, ol, ul, dl, hr, fieldset, legend, iframe {
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+  	font-size: 20px;
+}
+
+h4 {
+  	font-size: 16px;
+}
+
+.head {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+hr {
+  border: 0 solid #ccc;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
+#thanksdiv, #mobilenav {
+	display: none;
+}
+
+/* = body
+------------------------------------------------------------------------ */
+body {
+    background-color: #DEE1DA;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 23px;
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* = 960.gs layout modifications
+------------------------------------------------------------------------ */
+.container_12 {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-left: 0px;
+}
+
+.grid_12 {
+	margin: 0;
+	padding: 0;
+}
+
+.grid_3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 300;
+    font-size: 17px;
+    line-height: 23px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.grid_9 {
+	margin-top: 10px;
+	font-size: 17px;
+}
+
+/* = logo
+------------------------------------------------------------------------ */
+#logocontainer {
+	position: static;
+	background: #262626;
+	width: 100%;
+	height: 170px;
+	margin-bottom: 10px;
+}
+
+#mainlogo {
+	padding-top: 10px;
+	width: 570px;
+	height: 140px;
+}
+
+/* = nav bar
+------------------------------------------------------------------------ */
+nav {
+	float: left;
+	width: 220px;
+}
+
+nav ul {
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #555;
+}
+
+nav li {
+	position: relative;
+	border-bottom: 1px solid #555;
+}
+
+nav ul li:last-child {
+	border-bottom: none;
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    background: #f1f1f1;
+    transition:0.2s;
+}
+
+/* Change the nav options color on hover */
+nav li:hover > a {
+	background-color: #555;
+	color: white;
+}
+
+/* Adds an active class to let the user know which nav page s/he is on */
+nav .active {
+	background-color: #CF1C00;
+	color: white;
+}
+					
+nav ul ul {
+	position: absolute;
+	left: 0%;
+	top: 0;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	background-color: #E5E5E5;
+	transition: transform 0.2s ease-in;
+	transform: translateX(50px);
+}
+
+nav li:hover > ul {
+	left: 100%;
+	visibility: visible;
+	z-index: 200;
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+nav ul li > ul li a:hover {
+	background-color:#555;
+	color: white;
+}
+
+nav ul li.sub-menu > a::after {
+	content: "»";
+	position: absolute;
+	right: 1em;
+}
+
+nav .disabled {
+	pointer-events: none;
+}
+
+/* = description lists
+------------------------------------------------------------------------ */
+dt {
+	font-weight: bold;
+}
+
+dt:after {
+	content: ":";
+}
+
+dd {
+	padding-bottom: 10px;
+}
+
+/* = index/home page
+------------------------------------------------------------------------ */
+#homecontainer {
+	font-size: 18px;
+}
+
+#welcome {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 800;
+	font-size: 25px;
+	text-align: center;
+	padding-bottom: 32px;
+	color: #4472C4;
+	font-weight: bold;
+}
+
+/* = about page
+------------------------------------------------------------------------ */
+#aboutcontainer {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 10px;
+}
+
+#williamwebbellisjpgcontainer {
+	float: right;
+	width: 342px;
+	margin: 0 0 10px 15px;
+	padding: 5px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#williamwebbellisattribution {
+	font-size: 13px;
+}
+
+#williamwebbellis {
+	width: 340px;
+	height: 380px;
+}
+
+#aboutol {
+	list-style-position: inside;
+}
+
+#rugbyballlogo {
+	clear: both;
+	width: 300px;
+	height: 185px;
+}
+
+#rugbyballattribution {
+	font-size: 13px;
+}
+
+/* = overview page
+------------------------------------------------------------------------ */
+#overviewcontainer {
+	font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+#pitchpngcontainer {
+	float: left;
+	width: 410px;
+	margin: 0 15px 15px 0;
+	padding: 5px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#pitchpng {
+	width: 405px;
+	height: 630px;
+}
+
+#pitchnotecontainer {
+	clear: both;
+}
+
+#positionspngcontainer {
+	float: right;
+	width: 430px;
+	margin: 0 0 15px 15px;
+	padding: 5px;
+	border: 1px solid black;
+	text-align: center;
+	margin-top: 40px;
+}
+
+#positionspng {
+	width: 425px;
+	height: 450px;
+}
+
+#positionsdetailsp {
+	clear: both;
+}
+
+.overviewlist {
+	list-style-position: inside;
+}
+
+#sevenspngcontainer {
+	float: right;
+	width: 330px;
+	margin: 0 0 15px 15px;
+	padding: 5px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#sevenspng {
+	width: 325px;
+	height: 195px;
+}
+
+#table7scontainer {
+	clear: both;
+}
+
+/* Style table in 7s section of overview */
+#table7s caption {
+	font-weight: bold;
+	text-align: center;
+}
+
+#table7s {
+	border-collapse: collapse;
+}
+
+#table7s th, td {
+	padding: 0.5rem;
+	border: 1px solid black;
+	font-size: 90%;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#table7s tr:nth-child(even) {
+	background-color: white
+}
+
+#table7s th {
+    background-color: #A6A6A6;
+}
+
+#table7s th[scope=col] {
+	text-align: center;
+}
+
+#table7s th[scope=row] {
+	text-align: left;
+}
+
+#table7s tfoot td {
+	text-align: center;
+}
+
+/* = gameplay page
+------------------------------------------------------------------------ */
+#gameplaycontainer {
+	font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+#scrumjpgcontainer {
+	float: left;
+	width: 362px;
+	margin: 0 15px 10px 0;
+	padding: 5px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#scrumjpgattribution {
+	font-size: 13px;
+}
+
+#scrumjpg {
+	width: 360px;
+	height: 290px;
+}
+
+#lineoutjpgcontainer {
+	float: right;
+	width: 212px;
+	margin: 0 0 10px 15px;
+	padding: 5px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#lineoutjpgattribution {
+	font-size: 13px;
+}
+
+#lineoutjpg {
+	width: 210px;
+	height: 280px;
+}
+
+/* = infringements page
+------------------------------------------------------------------------ */
+#infringementscontainer {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 10px;
+}
+
+.infringementssubdl {
+	padding: 10px 0 0 50px;
+	font-size: 15px;
+	margin-bottom: 0;
+}
+
+/* = faq page
+------------------------------------------------------------------------ */
+button.accordion {
+    background-color: #CACCC8;
+    color: #000;
+    cursor: pointer;
+    padding: 5px 20px;
+    width: 100%;
+    height: 38px;
+    box-shadow: 
+		0px 0px 0px 1px rgba(155,155,155,0.3), 
+		1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+		0px 2px 2px rgba(0,0,0,0.1);
+    text-align: left;
+    outline: none;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 17px;
+    transition: 0.4s;
+}
+
+button.accordion:after {
+	content: "\002B";
+	color: #000;
+	font-weight: bold;
+	float: right;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+button.accordion.active,
+button.accordion.active:hover {
+	background: #828282;
+	color: black;
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+	box-shadow: 
+		0px 0px 0px 1px rgba(155,155,155,0.3), 
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+
+button.accordion:hover {
+    background-color: #f1f1f1;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: #f1f1f1;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+div.panel h3 {
+	padding-top: 20px;
+}
+
+#faq2jpgcontainer {
+	float: right;
+	width: 195px;
+	font-size: 13px;
+	text-align: center;
+	margin: 20px 0 20px 15px;
+}
+
+#faq2tackle {
+	height: 200px;
+	width: 195px;
+}
+
+#q3 {
+	clear: both;
+}
+
+#faq4jpgcontainer {
+	float: right;
+	width: 195px;
+	font-size: 13px;
+	text-align: center;
+	margin: 20px 0 20px 15px;
+}
+
+#faq4boys {
+	height: 200px;
+	width: 195px;
+}
+
+#q5 {
+	clear: both;
+}
+
+#costul {
+	color: black;
+	list-style-position: inside;
+	margin-left: 15px;
+}
+
+#faqaccordion {
+	margin-bottom: 20px;
+}
+
+/* = links page
+------------------------------------------------------------------------ */
+#linkscontainer {
+	margin-top: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+#linkstable {
+	border-collapse: collapse;
+}
+
+#linkstable caption {
+	font-weight: bold;
+	text-align: center;
+}
+
+#linkstable th, td {
+	padding: 0.5rem;
+	border: 1px solid black;
+	font-size: 14px;
+}
+
+#linkstable tr:nth-child(even) {
+	background-color: white
+}
+
+#linkstable th[scope=col] {
+    background-color: #A6A6A6;
+    font-weight: bold;
+}
+
+#linkstable th[scope=row] {
+	text-align: left;
+}
+
+#linkstable tfoot td {
+	text-align: center;
+}
+
+/* = passing page
+------------------------------------------------------------------------ */
+#passingcontainer {
+	font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+/* = catching page
+------------------------------------------------------------------------ */
+#catchingcontainer {
+	font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+/* = kicking page
+------------------------------------------------------------------------ */
+#kickingcontainer {	
+	font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+/* = tackling page
+------------------------------------------------------------------------ */
+#tacklingcontainer {
+	font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+/* = game page
+------------------------------------------------------------------------ */
+canvas {
+	border:1px solid black;
+	background-color: green;
+}
+
+#myfilter {
+	position: absolute;
+	background-color: #000000;
+	opacity: 0.3;
+	width: 322px;
+	height: 202px;
+	display: none;
+}
+
+#restartdiv {
+	position: absolute;
+	padding-top: 75px;
+	padding-left: 90px;
+	display:none;
+}
+
+#resumediv {
+	position: absolute;
+	padding-top: 80px;
+	padding-left: 30px;
+	width: 322px;
+	height: 202px;
+	color: white;
+	display:none;
+}
+
+#startbutton {
+	background: lightgreen;
+	border: 1px solid black;
+	color: black;
+	padding: 8px 16px;
+	text-decoration: none;
+	margin: 22px 0 8px 20px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+#restartbutton {
+	background: white;
+	border: 1px solid black;
+	color: black;
+	padding: 8px 16px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+#gamebuttondiv {
+	text-align: center;
+	width: 320px;
+	margin-bottom: 10px;
+}
+
+.gamebutton {
+	background: white;
+	border: 1px solid black;
+	color: black;
+	padding: 5px 5px;
+	width: 65px;
+	margin-bottom: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.gamebutton:active {
+  	background-color: lightblue;
+  	transform: translateY(4px);
+}
+
+#pausebutton {
+	background: gray;
+	border: 1px solid black;
+	color: black;
+	padding: 5px 5px;
+	width: 65px;
+	margin-bottom: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+#resumebutton {
+	background: gray;
+	border: 1px solid black;
+	color: black;
+	padding: 5px 5px;
+	width: 65px;
+	margin-bottom: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+#resumebuttondiv {
+	display: none;
+}
+
+/* = contact page
+------------------------------------------------------------------------ */
+#contactguarantee {
+	font-style: oblique;
+}
+
+form {
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+
+legend {
+	margin-left: 15px;
+	padding: 5px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+form p, option, input, attachment {
+	margin-left: 20px;
+}
+
+input[type=text] {
+    width: 96%;
+    padding: 6px 12px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+input[type=url] {
+    width: 96%;
+    padding: 6px 12px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+input[type=email] {
+    width: 96%;
+    padding: 6px 12px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+input[type=tel] {
+    width: 66%;
+    padding: 6px 12px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+input[list] {
+	width: 96%;
+    padding: 6px 12px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+input[type=radio] {
+    transform: scale(1);
+}
+
+#message {
+    width: 96%;
+    padding: 6px 12px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+select {
+	width: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+input[type=file] {
+	border: 1px solid black;
+	color: black;
+	padding: 8px 16px;
+	text-decoration: none;
+	margin: 4px 0 4px 0;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+#addpng {
+	width: 10px;
+	height: 10px;
+}
+
+#upload {
+	background-color: #DEE1DA;
+	border: 1px solid black;
+	color: black;
+	padding: 6px;
+	margin-left: 10px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 12px;
+}
+
+#formnavbuttons {
+	text-align: center;
+}
+
+input[type=reset] {
+	background-color: #CF1C00;
+	border: 1px solid black;
+	color: black;
+	padding: 8px 16px;
+	text-decoration: none;
+	margin: 22px 20px 8px 0;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	border: 1px solid black;
+	color: black;
+	padding: 8px 16px;
+	text-decoration: none;
+	margin: 22px 0 8px 20px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.button:active {
+  	background-color: lightblue;
+  	box-shadow: 0 5px #666;
+  	transform: translateY(4px);
+}
+
+.button {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#fNameError {
+	margin-left: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	color: red;
+}
+
+#lNameError {
+	margin-left: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	color: red;
+}
+
+#emailError {
+	margin-left: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	color: red;
+}
+
+#phoneError {
+	margin-left: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	color: red;
+}
+
+#messageError {
+	margin-left: 30px;
+	margin-bottom: 4px;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	color: red;
+}
+
+#accepttermsError {
+	margin: 10px 0 0 25px;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 0;
+	color: red;
+}
+
+/* = vision page
+------------------------------------------------------------------------ */
+#visioncontainer {
+	font-family: Tahoma, Geneva, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.visionlists {
+	list-style-position: inside; 
+}
+
+.boldpara {
+	font-weight: bold;
+}
+
+/* = privacy policy page
+------------------------------------------------------------------------ */
+.privacypolicylist {
+	list-style-position: inside; 
+}
+
+#privacycontainer {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
+}
+
+#privacyupdateddate {
+	font-style: italic;
+}
+
+/* = sitemap page
+------------------------------------------------------------------------ */
+#sitemapcontainer {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	margin-bottom: 10px;
+}
+
+#mainsitemapul {
+	list-style-position: inside;
+}
+
+.subsitemapul {
+	margin-bottom: 0;
+	margin-left: 35px;
+	list-style-position: inside;
+	list-style-type: circle;
+}
+
+/* = footer
+------------------------------------------------------------------------ */
+footer {
+	clear: both;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+#footercontact p {
+	text-align: left;
+}
+
+#footernav p {
+	text-align: left;
+}
+
+#footersocialmedia {
+	text-align: left;
+}
+
+.twitter-follow {
+	margin-top: 5px;
+	height: 23px;
+}
+
+.pinterest-follow {
+	margin-top: 5px;
+}

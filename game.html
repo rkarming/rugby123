@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>Game Time! | Start Playing Rugby Today!</title>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<meta charset="UTF-8">
+		<meta name="description" content="Start Playing Rugby Today!">
+		<meta name="keywords" content="start,playing,rugby,today,beginners,rugger,game">
+		<meta name="author" content="Rachel Armington">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/960_12_col.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/text.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+		<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 480px)">
+		<script src="js/confirmLeave.js"></script>
+		<script src="js/game.js"></script>
+		<!-- The attached jQuery script was taken from w3schools
+		(https://www.w3schools.com/JQuery/jquery_events.asp) and modified to fit this
+		webpage. It is used to maximize the performance of the Try, Try, Try Again! game
+		by hiding the "Start Playing!" button after it is clicked, and showing/hiding the
+		"Pause" button and the "Resume" button div.
+		Specifics:
+		Lines 1, 7, and 14 of this script ($(document).ready(function(){) ensure that the
+		document is finished loading before the jQuery loads. Without these lines, the
+		jQuery would be trying to hide/show buttons that are not yet created.
+		Line 2 of this script ($("#startbutton").click(function(){) attaches the
+		click method to the button element with the id="startbutton". 
+		Line 3 ($(this).hide();) attaches the hide method to the same button element.
+		In other words, when the start button is clicked, it will hide the button.
+		Line 8 ($("#pausebutton").click(function(){) attaches the click method to the
+		button element with the id="pausebutton".
+		Line 9 ($(this).hide();) attaches the hide method to the same pause button. In
+		other words, when the pause button is clicked, it will hide the button.
+		Line 10 ($("#resumebuttondiv").show();) attaches the show method to the div with
+		the id="resumebuttondiv". When the pause button is clicked, the div will show.
+		Line 15 ($("#resumebutton").click(function(){) attaches the click method to the
+		button element with the id="resumebutton".
+		Line 16 ($("#resumebuttondiv").hide();) attaches the hide method to the
+		resume button div. When the resume button is clicked, the div is hidden.
+		Line 17 ($("#pausebutton").show();) attaches the show method to the element with
+		the id="pausebutton". When the resume button is clicked, the pause button shows.-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="js/jquerygame.js"></script>	
+	</head>
+	<body>
+		<div class="container_12">
+		<!-- for facebook -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<!-- pinit.js for pinterest -->
+		<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+		<header id="logocontainer" class="grid_12">
+			<h1>
+			<a href="index.html">
+				<img src="images/mainlogo.png" alt="Rugby123 - Start Playing Rugby Today!"
+				id="mainlogo">
+			</a>
+			</h1>
+		</header>
+		<nav class="grid_3"><!-- site navigation menu -->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li class="sub-menu"><a href="index.html" class="disabled">Rugby 101</a>
+					<ul>
+						<li><a href="overview.html">Game Overview</a></li>
+						<li><a href="gameplay.html">Gameplay</a></li>
+						<li><a href="infringements.html">Infringements</a></li>
+					</ul>
+				</li>
+				<li class="sub-menu"><a href="index.html" class="disabled">Skills</a>
+					<ul>
+						<li><a href="passing.html">Passing</a></li>
+						<li><a href="catching.html">Catching</a></li>
+						<li><a href="kicking.html">Kicking</a></li>
+						<li><a href="tackling.html">Tackling</a></li>
+					</ul>
+				</li>
+				<li><a class="active" href="game.html">Game Time!</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="links.html">Links</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div id="gamecontainer" class="grid_9">
+			<h2 class="head">Try, Try, Try Again!</h2>
+			<p>You have the ball, but you do not have any passing options. You must
+			gain ground by running with the ball and dodging your opponents' tackles. How
+			long can you run with the ball before getting tackled?</p>
+			<p>Use the navigational buttons to move the rugby ball (you) up, down, left,
+			and right.<br>
+			<em>Note: you can press and hold the buttons to move!</em><br>
+			The goal is to dodge the pink blocks (your opponents' tackling
+			zones) and carry the ball for as many seconds as possible. Click on the
+			pause button to pause the game. (Once paused, a resume button will appear.)
+			Click "Start Playing!" when you are ready to play! Good luck!</p>
+			<button onclick="startGame()" id="startbutton">Start Playing!</button>
+			<div id="myfilter"></div>
+			<div id="restartdiv">
+				<button id="restartbutton" onclick="restartGame()">Play Again!</button>
+			</div>
+			<div id="resumediv">
+				<p>Click "Resume" to continue playing!</p>
+			</div>
+			<div id="canvascontainer"></div>
+			<br>
+			<div id="gamebuttondiv">
+				<button onmousedown="moveup()" class="gamebutton"
+				onmouseup="clearmove()" onmouseout="clearmove()">UP</button><br>
+				<button onmousedown="moveleft()" class="gamebutton"
+				onmouseup="clearmove()" onmouseout="clearmove()">LEFT</button>
+				<button onmousedown="movedown()" class="gamebutton"
+				onmouseup="clearmove()" onmouseout="clearmove()">DOWN</button>
+				<button onmousedown="moveright()" class="gamebutton"
+				onmouseup="clearmove()" onmouseout="clearmove()">RIGHT</button>
+				<div id="pausebuttondiv">
+					<button id="pausebutton" onclick="pauseGame()">Pause</button>
+				</div>
+				<div id="resumebuttondiv">
+					<button id="resumebutton" onclick="resumeGame()">Resume</button>
+				</div>
+			</div>
+		</div> <!-- end gamecontainer div -->		
+		<footer>
+			<hr />
+			<div id="footercontact" class="grid_4">
+				<p>Rugby123 - Start Playing Rugby Today!<br />
+				15 Rugby Road, Baltimore, MD 21210<br />
+				1-800-RUGGERS | <a href="mailto:info@startplayingrugbytoday.com"><span>Email Us!</span></a>
+				</p>
+			</div>
+			<div id="footernav" class="grid_4">
+				<p><a href="index.html">Home</a> | 
+				<a href="about.html">About Us</a> |
+				<a href="faq.html">FAQ</a> |
+				<a href="links.html">Links</a> |
+				<a href="contact.html">Contact Us</a>
+				<br />
+				<a href="vision.html">Future Vision</a> |
+				<a href="privacypolicy.html">Privacy Policy</a> | 
+				<a href="sitemap.html">Sitemap</a><br />
+				Copyright &copy; 2017 Rugby123<br />
+				<a href="http://validator.w3.org/check?uri=referer" onclick="return confirmLeave()"><img
+					src="https://www.w3.org/Icons/valid-html401" id="w3validatorimg"
+					alt="Valid HTML 4.01!" height="31" width="88" /></a></p>
+			</div>
+			<div id="footersocialmedia" class="grid_4">
+				<div class="twitter-follow">
+					<a href="https://twitter.com/TowsonU" class="twitter-follow-button" data-show-count="false">Follow @TowsonU</a>
+					<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+				<div class="fb-like" data-href="https://www.facebook.com/towsonuniversity/" data-width="290" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+				<br />
+				<div class="pinterest-follow">
+					<a data-pin-do="buttonFollow" href="https://www.pinterest.com/towsonu/">Towson&nbsp;University</a>
+				</div>
+			</div>
+		</footer>
+		<div id="thanksdiv" class="grid_9">
+			<p>Thank you for visiting Start Playing Rugby Today!<br />
+			This is a printer-friendly version and may not include images or videos.
+			Please return to our site to view the complete source.<br />
+			Copyright &copy; 2017 Rugby123</p>
+		</div>
+		<div id="mobilenav" class="grid_9">
+			<ul id="mobilenavul">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="overview.html">Game Overview</a></li>
+				<li><a href="gameplay.html">Gameplay</a></li>
+				<li><a href="infringements.html">Infringements</a></li>
+				<li><a href="passing.html">Passing</a></li>
+				<li><a href="catching.html">Catching</a></li>
+				<li><a href="kicking.html">Kicking</a></li>
+				<li><a href="tackling.html">Tackling</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+			</ul><br />
+			Copyright &copy; 2017 Rugby123
+		</div>
+	</div><!-- end container_12 div --> 
+	</body>
+</html>

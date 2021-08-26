@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>Contact | Start Playing Rugby Today!</title>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<meta charset="UTF-8">
+		<meta name="description" content="Start Playing Rugby Today!">
+		<meta name="keywords" content="start,playing,rugby,today,beginners,rugger,contact">
+		<meta name="author" content="Rachel Armington">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/960_12_col.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/text.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+		<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 480px)">
+		<script src="js/confirmLeave.js"></script>
+		<script src="js/formFunctions.js"></script>
+		<!-- The jQuery script was taken from w3schools
+		(https://www.w3schools.com/JQuery/jquery_events.asp) and modified to fit this
+		webpage.
+		Overview: 
+		This script implements two events: focus and blur. The events are assigned to all
+		of the form elements with the class "jQuery". When a form field of that
+		class gets focus, it will turn light blue. When a form field loses focus, it
+		will turn white. 
+		Specifics:
+		The first line of this script ($(document).ready(function(){) ensures that the
+		document is finished loading before the jQuery loads. Without this line, the
+		jQuery would be trying to change the color of input fields that were not yet
+		created.
+		The second line of this script ($(".jQuery").on({) attaches the two event handlers
+		to the form elements with the class "jQuery".
+		The third line of this script (focus: function(){) is the event handler that
+		executes the function when a form field gets focus.
+		The fourth line of this script modifies the CSS, changing the background color of
+		elements to light blue.
+		The sixth line of this script (blur: function(){) is the event handler that
+		executes the function when a form field loses focus.
+		The seventh line of this script modifies the CSS, changing the background color of
+		input elements to white. -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="js/jquerycontact.js"></script>
+	</head>
+	<body>
+		<div class="container_12">
+		<!-- for facebook -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<!-- pinit.js for pinterest -->
+		<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+		<header id="logocontainer" class="grid_12">
+			<h1>
+			<a href="index.html">
+				<img src="images/mainlogo.png" alt="Rugby123 - Start Playing Rugby Today!"
+				id="mainlogo">
+			</a>
+			</h1>
+		</header>
+		<nav class="grid_3"><!-- site navigation menu -->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li class="sub-menu"><a href="index.html" class="disabled">Rugby 101</a>
+					<ul>
+						<li><a href="overview.html">Game Overview</a></li>
+						<li><a href="gameplay.html">Gameplay</a></li>
+						<li><a href="infringements.html">Infringements</a></li>
+					</ul>
+				</li>
+				<li class="sub-menu"><a href="index.html" class="disabled">Skills</a>
+					<ul>
+						<li><a href="passing.html">Passing</a></li>
+						<li><a href="catching.html">Catching</a></li>
+						<li><a href="kicking.html">Kicking</a></li>
+						<li><a href="tackling.html">Tackling</a></li>
+					</ul>
+				</li>
+				<li><a href="game.html">Game Time!</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="links.html">Links</a></li>
+				<li><a class="active" href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div id="contactcontainer" class="grid_9">
+			<h2 class="head">Contact Us!</h2>
+				<p>Please do not hesitate to reach out to the staff here at Rugby123 -
+				Start Playing Rugby Today! Email is the best way to contact us, but you
+				may also contact us via mail, phone, or web contact form. We appreciate
+				your feedback!</p>
+				<p id="contactguarantee">You will hear back from us within 24 hours,
+				guaranteed!</p>
+				<h3 class="head">By Mail:</h3>
+				<p>Rugby123 - Start Playing Rugby Today!<br />
+				15 Rugby Road<br />
+				Baltimore, MD 21210</p>
+				<h3 class="head">By Phone:</h3>
+				<p>1-800-RUGGERS<br />(1-800-784-4377)</p>
+				<h3 class="head">By Email:</h3>
+				<p><a href="mailto:info@startplayingrugbytoday.com">info@startplayingrugbytoday.com</a>
+				</p>
+				<div class="printgroup">
+				<h3 class="head">By Web Contact Form:</h3>
+				<form name="contactForm" onsubmit="return submitForm()" action="index.html"
+				method="get">
+					<fieldset>
+						<legend>
+							Please Complete the Following Information:
+						</legend>
+					<p>
+						<label>First Name:*</label><span id="fNameError"></span><br />
+							<input type="text" id="firstname" class="jQuery" required="required" 
+							maxlength="30" placeholder="First Name" onBlur="fNameValidation()">
+					</p>
+					<p>
+						<label>Last Name:*</label><span id="lNameError"></span><br />
+							<input type="text" id="lastname" class="jQuery" required="required" 
+							maxlength="30" placeholder="Last Name" onBlur="lNameValidation()">
+					</p>
+					<p>
+						<label>Company:</label><br />
+							<input type="text" name="company" class="jQuery" maxlength="150" 
+							placeholder="Company">
+					</p>
+					<p>
+						<label>Website:</label><br />
+							<input type="url" name="website" class="jQuery"
+							placeholder="http://www.example.com" />
+					</p>
+					<p>
+						<label>Email Address:*</label><span id="emailError"></span><br />
+							<input type="email" id="email" class="jQuery" required="required" 
+							maxlength="100" placeholder="mail@example.com" onBlur="emailValidation()">
+					</p>
+					<p>
+						<label>Phone Number:*</label><span id="phoneError"></span><br />
+							<input type="tel" id="phone" class="jQuery" required="required"
+							maxlength="10" placeholder="0000000000 (10 digits, no dashes)"
+							onBlur="phoneVerification()">
+						<label for="phonetype">
+							Phone Type:
+						</label>
+						<select name="phonenumtype" id="phonetype" class="jQuery">
+							<option selected>Select</option>
+							<option value="cell">Cell</option>
+							<option value="home">Home</option>
+							<option value="work">Work</option>
+						</select>
+					</p>
+					<p>
+						<label>Time Zone:</label><br />
+							<input list="timezones" name="timezone" class="jQuery"
+							placeholder="Eastern Time (ET)">
+							<datalist id="timezones">
+								<option value="Pacific Time (PT)">
+								<option value="Mountain Time (MT)">
+								<option value="Central Time (CT)">
+								<option value="Eastern Time (ET)">
+							</datalist>
+					</p>
+					<p>	
+						What is your preferred contact method?
+						<br />
+						<input id="pemail" type="radio" name="preferredcontactmethod" 
+						class="jQuery" value="e">
+						<label for="pemail">Email</label>
+						<br />
+						<input id="pphone" type="radio" name="preferredcontactmethod" 
+						class="jQuery" value="p">
+						<label for="pphone">Phone</label>	
+					</p>		
+					<p>
+						Subject:
+						<br />
+						<input id="scompanyq" type="radio" name="contactreason"
+						class="jQuery" value="companyq">
+						<label for="scompanyq">Question About Your Company</label>
+						<br />
+						<input id="srugbyq" type="radio" name="contactreason"
+						class="jQuery" value="rugbyq">
+						<label for="srugbyq">Question About Rugby</label>
+						<br />
+						<input id="swebsitehelp" type="radio" name="contactreason"
+						class="jQuery" value="websitehelp">
+						<label for="swebsitehelp">Website Technical Help</label>
+						<br />
+						<input id="sfeedback" type="radio" name="contactreason"
+						class="jQuery" value="feedback">
+						<label for="sfeedback">Feedback</label>
+						<br />
+						<input id="sother" type="radio" name="contactreason"
+						class="jQuery" value="other">
+						<label for="sother">Other</label>
+					</p>
+					<p>
+						<label for="message">Message:*</label><span id="messageError"></span>
+						<br />
+						<textarea rows="4" cols="50" id="message" placeholder="Your message" 
+						class="jQuery" required onBlur="messageValidation()"></textarea>
+					</p>
+					<p>
+						Attachment:
+						<input type="file" name="attachment" />
+						<button id="upload"><img src="images/add.png" alt="add" id="addpng" />
+						Upload</button>
+					</p>
+						<label>
+							<input type="checkbox" id="signmeup" />
+							Receive news and updates via email from Rugby123 - Start Playing Rugby Today!
+						</label>
+						<br />
+						<label>
+							<input type="checkbox" id="acceptterms" />
+							I have read and agree to the terms listed in Rugby123's <a href="privacypolicy.html">Privacy Policy</a>.*
+						</label>
+						<div id="accepttermsError"></div>
+					<div id="formnavbuttons">
+						<p>
+							<input type="reset" class="button" value="RESET">
+							<input type="submit" class="button" value="SUBMIT">
+						</p>
+					</div>
+					<p><em>Note: Fields marked with * are required</em></p>
+					</fieldset>
+				</form>
+				</div><!-- end printgroup div -->
+			</div><!-- end contactcontent div -->   
+		<footer>
+			<hr />
+			<div id="footercontact" class="grid_4">
+				<p>Rugby123 - Start Playing Rugby Today!<br />
+				15 Rugby Road, Baltimore, MD 21210<br />
+				1-800-RUGGERS | <a href="mailto:info@startplayingrugbytoday.com"><span>Email Us!</span></a>
+				</p>
+			</div>
+			<div id="footernav" class="grid_4">
+				<p><a href="index.html">Home</a> | 
+				<a href="about.html">About Us</a> |
+				<a href="faq.html">FAQ</a> |
+				<a href="links.html">Links</a> |
+				<a href="contact.html">Contact Us</a>
+				<br />
+				<a href="vision.html">Future Vision</a> |
+				<a href="privacypolicy.html">Privacy Policy</a> | 
+				<a href="sitemap.html">Sitemap</a><br />
+				Copyright &copy; 2017 Rugby123<br />
+				<a href="http://validator.w3.org/check?uri=referer" onclick="return confirmLeave()"><img
+					src="https://www.w3.org/Icons/valid-html401" id="w3validatorimg"
+					alt="Valid HTML 4.01!" height="31" width="88" /></a></p>
+			</div>
+			<div id="footersocialmedia" class="grid_4">
+				<div class="twitter-follow">
+					<a href="https://twitter.com/TowsonU" class="twitter-follow-button" data-show-count="false">Follow @TowsonU</a>
+					<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+				<div class="fb-like" data-href="https://www.facebook.com/towsonuniversity/" data-width="290" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+				<br />
+				<div class="pinterest-follow">
+					<a data-pin-do="buttonFollow" href="https://www.pinterest.com/towsonu/">Towson&nbsp;University</a>
+				</div>
+			</div>
+		</footer>
+		<div id="thanksdiv" class="grid_9">
+			<p>Thank you for visiting Start Playing Rugby Today!<br />
+			This is a printer-friendly version and may not include images or videos.
+			Please return to our site to view the complete source.<br />
+			Copyright &copy; 2017 Rugby123</p>
+		</div>
+		<div id="mobilenav" class="grid_9">
+			<ul id="mobilenavul">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="overview.html">Game Overview</a></li>
+				<li><a href="gameplay.html">Gameplay</a></li>
+				<li><a href="infringements.html">Infringements</a></li>
+				<li><a href="passing.html">Passing</a></li>
+				<li><a href="catching.html">Catching</a></li>
+				<li><a href="kicking.html">Kicking</a></li>
+				<li><a href="tackling.html">Tackling</a></li>
+				<li><a class="active" href="contact.html">Contact Us</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+			</ul><br />
+			Copyright &copy; 2017 Rugby123
+		</div>
+		</div><!-- end container_12 -->
+	</body>
+</html>

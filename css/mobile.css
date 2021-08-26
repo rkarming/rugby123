@@ -1,0 +1,464 @@
+@media only screen and (max-device-width: 480px) {
+
+body {
+	width: 100%;
+	min-width: 0;
+	overflow-x: hidden;
+}
+
+.container_12 {
+  	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+nav, .grid_3, .container_12 .grid_3 {
+	display: none;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.grid_9, .container_12 .grid_9 {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.grid_12, .container_12 .grid_12 {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#homecontainer, #aboutcontainer, #gameplaycontainer,
+#infringementscontainer, #passingcontainer, #catchingcontainer, #kickingcontainer,
+#tacklingcontainer, #gamecontainer, #faqcontainer, #linkscontainer, #contactcontainer,
+#visioncontainer, #privacycontainer {
+	width: 95%;
+	font-size: 100%;
+    line-height: normal;
+    margin: 0 2%;
+}
+
+.head {
+	font-size: 100%;
+}
+
+iframe {
+	width: 100%;
+}
+
+/* = logo
+------------------------------------------------------------------------ */
+#logocontainer {
+	width: 100%;
+	height: 200%;
+}
+
+#mainlogo {
+	width: 80%;
+	height: 90%;
+}
+
+/* = footer
+------------------------------------------------------------------------ */
+footer, .grid_4, .container_12 .grid_4 {
+	width: 90%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#footernav {
+	display: none;
+}
+
+#footercontact, #footersocialmedia {
+	width: 90%;
+	font-size: 100%;
+	line-height: normal;
+	display: inline;
+	margin: 0 2%;
+}
+
+/* = mobile nav
+------------------------------------------------------------------------ */
+#mobilenav {
+	display: initial;
+	width: 75%;
+	font-size: 100%;
+	margin: 0 2%;
+}
+
+#mobilenavul {
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #555;
+}
+
+#mobilenavul li {
+	border-bottom: 1px solid #555;
+}
+
+#mobilenavul li:last-child {
+	border-bottom: none;
+}
+
+#mobilenav a {
+    display: block;
+    color: black;
+	line-height: normal;
+    text-decoration: none;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Adds an active class to let the user know which nav page s/he is on */
+#mobilenav .active {
+	background-color: #CF1C00;
+	color: white;
+}
+
+
+/* = home page
+------------------------------------------------------------------------ */
+#welcome {
+	font-size: 120%;
+	line-height: normal;
+}
+
+/* = about page
+------------------------------------------------------------------------ */
+#williamwebbellisjpgcontainer {
+	float: none;
+	width: 100%;
+	margin: 10px auto;
+}
+
+#williamwebbellis {
+	width: 98%;
+	display: block;
+	margin: 0 auto;
+	height: 140%;
+}
+
+#williamwebbellisattribution {
+	font-size: 90%;
+	line-height: normal;
+}
+
+#plaque {
+	display: none;
+}
+
+#rugbyballlogo {
+	display: block;
+	height: 50%;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#rugbyballattribution {
+	font-size: 70%;
+	line-height: normal;
+	text-align: center;
+}
+
+/* = overview page
+------------------------------------------------------------------------ */
+#overviewcontainer {
+	width: 95%;
+	font-size: 100%;
+    line-height: normal;
+    margin: 0 2%;
+}
+
+#pitchpngcontainer {
+	float: none;
+	width: 100%;
+	margin: 10px auto;
+}
+
+#pitchpng {
+	width: 98%;
+	height: 140%;
+}
+
+#positionspngcontainer {
+	float: none;
+	width: 100%;
+	margin: 10px auto;
+}
+
+#positionspng {
+	width: 98%;
+	height: 140%;
+}
+
+#sevenspngcontainer {
+	float: none;
+	width: 100%;
+	margin: 10px auto;
+}
+
+#sevenspng {
+	width: 98%;
+	height: 140%;
+}
+
+#table7s th, td {
+	font-size: 90%;
+}
+
+/* = gameplay page
+------------------------------------------------------------------------ */
+#scrumjpgcontainer {
+	float: none;
+	width: 100%;
+	margin: 10px auto;
+}
+
+#scrumjpg {
+	width: 98%;
+	height: 140%;
+}
+
+#scrumjpgattribution {
+	font-size: 90%;
+	line-height: normal;
+}
+
+#lineoutjpgcontainer {
+	float: none;
+	width: 100%;
+	margin: 10px auto;
+}
+
+#lineoutjpg {
+	width: 98%;
+	height: 140%;
+}
+
+#lineoutjpgattribution {
+	font-size: 90%;
+	line-height: normal;
+}
+
+/* = infringements page
+------------------------------------------------------------------------ */
+.infringementssubdl {
+	font-size: 100%;
+}
+
+/* = contact page
+------------------------------------------------------------------------ */
+legend {
+	font-size: 80%;
+}
+
+form {
+	font-size: 100%;
+}
+
+input[type=text], input[type=url], input[type=email], input[type=tel],
+input[list], #message {
+    width: 95%;
+    padding: 20px;
+    margin: 4px 0;
+    font-size: 80%;
+}
+
+#phonetype {
+	font-size: 80%;
+	padding: 20px;
+	width: 50%;
+	margin: 10px 0;
+}
+
+input[type=file] {
+	font-size: 80%;
+	padding: 1%;
+	width: 60%;
+}
+
+#upload {
+	padding: 1%;
+    font-size: 80%;
+    width: 20%;
+}
+
+#addpng {
+	width: 10%;
+	height: 10%;
+}
+
+input[type=reset], input[type=submit] {
+	font-size: 80%;
+	padding: 20px;
+	width: 30%;
+}
+
+#formnavbuttons {
+	height: 80%;
+}
+
+#signmeup {
+	margin-bottom: 20px;
+}
+
+#acceptterms {
+	margin-bottom: 20px;
+	margin-top: 60px;
+}
+
+#fNameError, #lNameError, #emailError, #phoneError, #messageError, #accepttermsError {
+	font-size: 80%;
+}
+
+/* = game page
+------------------------------------------------------------------------ */
+canvas {
+	border:1px solid black;
+	background-color: green;
+	width: 98%;
+	height: 100%;
+}
+
+#myfilter {
+	width: 93%;
+	height: 39%;
+}
+
+#restartdiv {
+	padding-top: 20%;
+	padding-left: 30%;
+}
+
+#resumediv {
+	padding-top: 25%;
+	padding-left: 10%;
+	width: 93%;
+	height: 39%;
+}
+
+#startbutton {
+	padding: 20px;
+	margin: 40px;
+    font-size: 100%;
+}
+
+#restartbutton {
+	padding: 15px;
+    font-size: 100%;
+}
+
+#gamebuttondiv {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.gamebutton {
+	padding: 15px;
+	width: 25%;
+    font-size: 100%;
+}
+
+#pausebutton {
+	padding: 15px;
+	width: 25%;
+    font-size: 100%;
+}
+
+#resumebutton {
+	padding: 15px;
+	width: 25%;
+    font-size: 100%;
+}
+
+#resumebuttondiv {
+	display: none;
+}
+
+
+/* = faq page
+------------------------------------------------------------------------ */
+button.accordion {
+	width: 99%;
+	font-size: 100%;
+    line-height: normal;
+    padding: 20px;
+    height: 15%;
+}
+
+div.panel {
+	width: 89%;
+}
+
+h3 {
+	font-size: 100%;
+}
+
+#faq2jpgcontainer, #faq4jpgcontainer {
+	display: none;
+}
+
+/* = links page
+------------------------------------------------------------------------ */
+#linkstable th, td {
+	font-size: 60%;
+}
+
+#linkstable {
+	width: 100%;
+}
+
+/* = sitemap page
+------------------------------------------------------------------------ */
+#cont, #sitemapcontainer {
+	width: 95%;
+	font-size: 100%;
+    line-height: normal;
+    margin: 0 2%;
+}
+
+h3 a {
+	float: none;
+}
+
+#sitemaptable {
+	width: 98%;
+}
+
+#footer {
+	width: 98%;
+	font-size: 50%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,367 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	background: white;
+	color: black;
+}
+
+p, table, ol, ul, dl, footer, .printgroup, img {
+	page-break-inside: avoid;
+}
+
+.head {
+	font-family: "Times New Roman", Times, serif;
+	break-after: avoid;
+}
+
+h1 { 
+	column-span: all 
+	break-before: column; 
+	break-inside: avoid-column; 
+	break-after: avoid-column;
+}
+
+h2, h3, h4 {
+	break-after: avoid;
+}
+
+nav, .grid_3, iframe, #footernav, #footersocialmedia, .printhide {
+	display: none;
+}
+
+.grid_9 {
+	width: 100%;
+	margin: 0 5%;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+}
+
+#homecontainer, #aboutcontainer, #overviewcontainer, #gameplaycontainer,
+#infringementscontainer, #passingcontainer, #catchingcontainer, #kickingcontainer,
+#tacklingcontainer, #gamecontainer, #faqcontainer, #linkscontainer, #contactcontainer,
+#visioncontainer, #privacycontainer {
+	width: 100%;
+	margin: 0 auto;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 110%;
+}
+
+a:link, 
+a:visited { 
+	color: #520; 
+	background: transparent;
+}
+
+/* = logo
+------------------------------------------------------------------------ */
+#logocontainer {
+	background: white;
+	height: 40%;
+}
+
+#mainlogo {
+	width: 40%;
+	height: 40%;
+}
+
+/* = footer
+------------------------------------------------------------------------ */
+footer {
+	width: 100%;
+}
+
+.grid_4 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+}
+
+#footercontact {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#footercontact p {
+	text-align: center;
+}
+
+/* Do not show "Email" hyperlink in footer */
+#footercontact span { 
+	display: none;
+}
+
+/* Show actual email address */
+#footercontact a:link:after, 
+#footercontact a:visited:after {
+content: "info@startplayingrugbytoday.com"; 
+}
+
+#thanksdiv {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#thanksdiv p {
+	text-align: center;
+	padding: 10px;
+	border: 1px solid black;
+	font-size: 16px;
+}
+
+/* Home Page
+---------------------------- */
+#welcome {
+	color: black;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 15px;
+	text-align: center;
+}
+
+#homecontainer a:link:after, 
+#homecontainer a:visited:after { 
+	content: " (http://ait616.com/rarmin1/finalproject/" attr(href) ") "; 
+	font-size: 75%; 
+}
+
+/* About Page
+---------------------------- */
+#williamwebbellisjpgcontainer, #rugbyballlogo, #rugbyballattribution {
+	display: none;
+}
+
+#aboutcontainer a:link:after, 
+#aboutcontainer a:visited:after { 
+	content: " (http://ait616.com/rarmin1/finalproject/" attr(href) ") "; 
+	font-size: 75%; 
+}
+
+/* Overview Page
+---------------------------- */
+#positionspngcontainer {
+	width: 305px;
+	margin-top: 90px;
+}
+
+.crop {
+	width: 300px;
+	height: 225px;
+	overflow: hidden;
+}
+
+.crop img {
+	width: 425px;
+	height: 450px;
+	margin-top: -150px;
+	margin-left: -65px;
+}
+
+#overviewcontainer a:link:after, 
+#overviewcontainer a:visited:after { 
+	content: " (" attr(href) ") "; 
+	font-size: 75%; 
+}
+
+/* Gameplay Page
+---------------------------- */
+#gameplaycontainer a:link:after, 
+#gameplaycontainer a:visited:after { 
+	content: " (http://ait616.com/rarmin1/finalproject/" attr(href) ") "; 
+	font-size: 75%; 
+}
+
+#scrumjpgcontainer, #lineoutjpgcontainer {
+	display: none;
+}
+
+/* Infringements Page
+---------------------------- */
+#infringementscontainer a:link:after, 
+#infringementscontainer a:visited:after { 
+	content: " (http://ait616.com/rarmin1/finalproject/" attr(href) ") "; 
+	font-size: 75%; 
+}
+
+#infringementsmaindl {
+	page-break-inside: auto;
+}
+
+/* Catching Page
+---------------------------- */
+#catchingcontainer a:link:after, 
+#catchingcontainer a:visited:after { 
+	content: " (http://ait616.com/rarmin1/finalproject/" attr(href) ") "; 
+	font-size: 75%; 
+}
+
+/* Kicking Page
+---------------------------- */
+#kickingcontainer a:link:after, 
+#kickingcontainer a:visited:after { 
+	content: " (http://ait616.com/rarmin1/finalproject/" attr(href) ") "; 
+	font-size: 75%; 
+}
+
+/* FAQ Page
+---------------------------- */
+#faqcontainer a:link:after, 
+#faqcontainer a:visited:after { 
+	content: " (" attr(href) ") "; 
+	font-size: 75%; 
+}
+
+button.accordion {
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+button.accordion.active,
+button.accordion.active:hover {
+	background: white;
+	color: black;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+button.accordion:hover {
+    background-color: white;
+}
+
+div.panel {
+    background-color: white;
+}
+
+div.panel h3 {
+	font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}
+
+#faq2jpgcontainer {
+	display: none;
+}
+
+#faq4jpgcontainer {
+	display: none;
+}
+
+#faqaccordion {
+	margin-bottom: 20px;
+}
+
+/* Links Page
+---------------------------- */
+#linkscontainer a:link:after, 
+#linkscontainer a:visited:after { 
+	content: " (" attr(href) ") "; 
+	font-size: 75%; 
+}
+
+#linkstable {
+	page-break-inside: auto;
+}
+
+/* Contact Page
+---------------------------- */
+input[type=text] {
+    margin: 0;
+    padding: 6px 12px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}
+
+input[type=url] {
+    margin: 0;
+    padding: 6px 12px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}
+
+input[type=email] {
+    margin: 0;
+    padding: 6px 12px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}
+
+input[type=tel] {
+    margin: 0;
+    padding: 6px 12px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}
+
+input[list] {
+	margin: 0;
+	padding: 6px 12px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}
+
+#message {
+    margin-top: 0;
+    padding: 6px 12px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}
+
+select {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}
+
+input[type=file] {
+	font-family: "Times New Roman", Times, serif;
+    font-size: 13px;
+}
+
+#upload {
+	display: none;
+}
+
+input[type=reset] {
+	display: none;
+}
+
+input[type=submit] {
+	display: none;
+}
+
+.button {
+	box-shadow: none;
+}
+
+/* Future Vision Page
+---------------------------- */
+#visioncontainer a:link:after, 
+#visioncontainer a:visited:after { 
+	content: " (" attr(href) ") "; 
+	font-size: 75%; 
+}
+
+/* Sitemap Page
+---------------------------- */
+#sitemapcontainer a:link:after, 
+#sitemapcontainer a:visited:after { 
+	content: " (" attr(href) ") "; 
+	font-size: 75%;
+}
+
+
+
+
+
+
+
+
+
+
+
